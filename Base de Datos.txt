@@ -1,0 +1,20 @@
+create database com23047;
+use com23047;
+create table clientes
+(
+id int not null auto_increment,
+nombre varchar(40) not null,
+apellido varchar(40) not null,
+edad tinyint not null,
+fecha timestamp not null,
+provincia varchar(30) not null,
+primary key(id)
+);
+
+insert into clientes values (1,'Martin','Martel',48,20230529,'CABA');
+insert into clientes values (2,'Pedro','Rodriguez',31,20230529,'Santa Fe');
+insert into clientes values (3,'Juan','Alvarez',24,20230529,'Mendoza');
+insert into clientes values (4,'Pablo','Gonzalez',30,20230529,'Formosa');
+insert into clientes values (5,'Marcelo','Gomez',58,20230529,'Salta');
+
+select * from clientes;
